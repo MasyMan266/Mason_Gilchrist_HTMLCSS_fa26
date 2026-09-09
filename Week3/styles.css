@@ -1,0 +1,16 @@
+section {
+    border-bottom: blue solid 1px;
+}
+
+h1{
+    text-align: center;
+}
+
+ol{
+    text-align: center;
+    list-style-position: inside;
+}
+
+p.note {
+    text-align: center;
+}
