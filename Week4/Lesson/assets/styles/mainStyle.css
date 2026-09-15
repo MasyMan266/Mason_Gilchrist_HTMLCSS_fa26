@@ -1,0 +1,22 @@
+body{
+    color: grey;
+}
+
+
+a:link {
+    color: rgb(236, 157, 67);
+} /*unvisited link*/
+a:visited {
+    color: green;
+} 
+
+a:hover {
+    color: brown;
+}
+a:active {
+    color: red;
+    
+} 
+a:focus {
+    color: yellow;
+} 
