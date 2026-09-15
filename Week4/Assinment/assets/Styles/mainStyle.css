@@ -1,0 +1,35 @@
+body{
+    color: grey;
+}
+h2 {
+    margin: 15px;
+}
+h1 {
+    margin: 5px;
+}
+p.about_us {
+    font-family: Sans-serif;
+    margin: 20px;
+}
+
+footer.contact_us {
+    margin: 5px;
+}
+
+a:link {
+    color: rgb(236, 157, 67);
+} /*unvisited link*/
+a:visited {
+    color: green;
+} 
+
+a:hover {
+    color: brown;
+}
+a:active {
+    color: red;
+    
+} 
+a:focus {
+    color: yellow;
+} 
