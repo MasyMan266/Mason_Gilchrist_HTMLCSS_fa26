@@ -1,36 +1,66 @@
 main {
     margin: 15px;
-    
+}
+:root {
+    --base-background: rgba(5, 0, 0, 0.993);
+    --body-color:  hsl(34, 100%, 50%);
+    --text-color: black;
+    --padding-10: 10px;
+    --padding-5: 5px;
+    --box-shadow: 5px 10px 10px rgba(66, 44, 3, 0.677);
+    --border-color: 3px solid rgba(32, 21, 1, 0.072);
+    --set-bbox-position: position: relative;
+    --set-bbox-min-height: min-height: 100px;
+}
+
+main-bounding-box {
+    position: relative;
+    min-height: 100px;
+}
+
+.cat-container {
+    position: fixed;
+    bottom: -5px;
+    right: -5px;
+}
+
+
+h1 {
+    display:inline-block;
+    border: var(--border-color);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+
 }
 header {
     text-align:center; font-family:Arial, Helvetica, sans-serif;
 }
 main blockquote {
     display: inline-block;
-    border: 3px solid rgba(32, 21, 1, 0.072);
+    border: var(--border-color);
     border-radius: 10px;
     margin-left: 15px;
-    padding: 5px;
-    box-shadow: 5px 10px 10px rgba(66, 44, 3, 0.677);
+    padding: var(--padding-10);
+    box-shadow: var(--box-shadow);
 }
 
 main ul {
     display: inline-block;
-    border: 3px solid rgba(32, 21, 1, 0.072);
+    border: var(--border-color);
     border-radius: 10px;
     margin-left: 15px;
-    padding: 5px;
-    box-shadow: 5px 10px 10px rgba(66, 44, 3, 0.677);
+    padding: var(--padding-5);
+    box-shadow: var(--box-shadow);
 }
 
 main ol {
-    display: inline-block;
-    border: 3px solid rgba(187, 129, 19, 0.072);
+    
+    border: var(--border-color);
     border-width: 5px;
     border-radius: 10px;
     margin-left: 15px;
-    padding: 5px;
-    box-shadow: 5px 10px 10px rgba(66, 44, 3, 0.677);
+    padding: var(--padding-5);
+    box-shadow: var(--box-shadow);
 }
 
 body {
@@ -38,5 +68,21 @@ body {
     margin-right: 15px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: clamp(1rem, 5vw, 1rem);
+    background-color: var(--body-color);
+    color: var(--text-color);
+    padding: var(--padding-10);
+}
+html {
+    background-color: var(--base-background);
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --base-background: black;
+        --body-color: rgb(65, 36, 0);
+        --text-color: white;
+        --border-color: 3px solid rgba(32, 21, 1, 0.072);
+        --box-shadow: 5px 10px 10px rgba(251, 244, 230, 0.677);
+    }
+
+}
