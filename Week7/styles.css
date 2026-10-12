@@ -6,6 +6,9 @@
     
 }
 
+a[target="_blank"]::after {
+    content: '🔗'  ;
+}
 
 #settings-panel {
     margin-inline: auto;
@@ -86,10 +89,10 @@ footer {
     #settings-panel {
         width: 100%;
     }
-    .setting a {
+    .setting a.active::after {
         border-width: 150%;
-        display: relative;
-        margin-inline: center;
+        display: block;
+        margin-inline: auto;
         
     }
 }
