@@ -1,0 +1,60 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+#mainBox {
+   border: dashed blue thick;
+   width: fit-screenmax;
+   height: fit-screenmax;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 1px;
+   position: relative;
+}
+
+#content {
+    border: solid red thin;
+    padding: 10px;
+    width: calc(100% - 60px);
+    height: calc(100% - 60px);
+    margin: 30px;
+}
+#header {
+    border: solid green thin;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.nav a {
+    border: solid black thin;
+    text-decoration: none;
+    background-color: lightgray;
+    border-radius: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 15px 15px;
+    margin: 15px;
+    display: inline-block;
+    color: black;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.nav a:hover {
+    background-color: darkslateblue;
+    color: white;
+}
+
+.nav a:active {
+    transform: scale(0.90);
+}
+
+@media (max-width: 600px) {
+    #mainBox {
+        border: dashed blue thick;
+        width: 398px;
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1px;
+    }
+}
