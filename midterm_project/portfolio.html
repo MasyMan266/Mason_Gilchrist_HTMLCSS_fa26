@@ -6,7 +6,38 @@
         <link rel="stylesheet" href="Assets/Styles/reset.css">
         <link rel="stylesheet" href="Assets/Styles/styles.css">
         <title>Portfolio</title>
+        <div class="nav-container">
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-item">
+                        <span class="full-label">Home</span>
+                        <span class="short-label">Home</span>
+                    </a></li>
+                    <br>
+                    <li><a 
+                        href="portfolio.html" class="nav-item" id="portfolio">
+                        <span class="full-label">Portfolio</span>
+                        <span class="short-label">Port</span>
+                    </a></li>
+                    <br>
+                    <li><a 
+                        href="contact.html" class="nav-item">
+                        <span class="full-label">Contact</span>
+                        <span class="short-label">Cont</span>
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
     </head>
     <body>
+        <div class="content">
+            <div id="portfolio_text">
+                <p>Welcome to my portfolio! Here you can view all my projects and planned work. Most of my projects involve Raspberry Pi's due to my current interest in them and with how versatile they are for various tech experiments.</p>
+                <p>1. Agricultural Soil Sensor</p>
+                <p>Description: Measures soil tempreture, moisture, Nitrogen, phosphorus, and potassium levels tom measure soil health. It uses a raspberry pi zero 2 w to receive data packets through LoRa communication from various soil sensors, it then puts that data into a database for analysis and querying.</p>
+                <img src="Assets/Images/Soil-Sensor.png" class="portfolio_image" alt="agricultural soil sensor">
+                <p>2. Raspberry Pi Gadget Switcher</p>
+            </div>
+        </div>
     </body>
 </html>
