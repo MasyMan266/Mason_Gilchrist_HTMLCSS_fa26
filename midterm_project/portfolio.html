@@ -33,11 +33,20 @@
         <div class="content">
             <div id="portfolio_text">
                 <p>Welcome to my portfolio! Here you can view all my projects and planned work. Most of my projects involve Raspberry Pi's due to my current interest in them and with how versatile they are for various tech experiments.</p>
-                <p>1. Agricultural Soil Sensor</p>
-                <p>Description: Measures soil tempreture, moisture, Nitrogen, phosphorus, and potassium levels tom measure soil health. It uses a raspberry pi zero 2 w to receive data packets through LoRa communication from various soil sensors, it then puts that data into a database for analysis and querying.</p>
+                <p><strong>1. Agricultural Soil Sensor</strong></p>
+                <p>Description: Measures soil temperature, moisture, Nitrogen, Phosphorus, and Potassium levels to measure soil health. It uses a Raspberry Pi Zero 2 W to receive data packets through LoRa communication from various soil sensors, it then puts that data into a database for analysis and querying to be sent to a web interface.</p>
+                <p id="portfolio_text">Prototype Image:</p>
                 <img src="Assets/Images/Soil-Sensor.png" class="portfolio_image" alt="agricultural soil sensor">
-                <p>2. Raspberry Pi Gadget Switcher</p>
+                <p id="portfolio_text">I used a bare metal SX1262 Lora Module Pi Hat that acts as the gateway and receives the data, while the ESP32-S3 with a LoRa extention board collects temperature and moisture readings from the b280 sensor as an example instead of using an industrial soil sensor. I'm in the works on making a full fledged industrial level soil sensor system.</p>
+                <p><strong>2. Raspberry Pi Gadget Switcher</strong></p>
+                <p>Description: A Raspberry Pi-based switcher that allows you to control various gadget modes that the Raspberry Pi is connected to. It provides an interface to easily switch between different modes like HID-gadget, mass storage, ethernet gadget, serial gadget, and more.</p>
+                <p id="portfolio_text">Prototype Image:</p>
+                <img src="Assets/Images/Pi-Gadget.jpg" class="portfolio_image" alt="raspberry pi gadget switcher">
             </div>
         </div>
     </body>
+    <footer>
+        <p>&copy; 2024 Mason Gilchrist</p>
+        
+    </footer>
 </html>
