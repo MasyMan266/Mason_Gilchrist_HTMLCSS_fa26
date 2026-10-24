@@ -1,0 +1,1 @@
+<span> = The <span> tag in HTML is a generic inline container used to group and target a specific part of a text or document. By itself, a <span> doesn't change anything visually and carries no semantic meaning. Instead, it serves as a hook so you can apply unique styling via CSS or manipulate the text using JavaScript

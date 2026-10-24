@@ -1,0 +1,130 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.nav-item {
+    margin: 0 0 0 -40px;
+    padding: .6rem .6rem;
+    background-color: darkgray;
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+body {
+   
+    background-color: darkgray;
+    margin: 0;
+    min-height: 250vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+footer {
+    width: 100%;
+    
+}
+
+.nav-container {
+   
+    margin: 0 2px 0 2px;
+    width: 143px;
+    flex: none;
+    position: relative;
+    background-color: skyblue;
+}
+
+.content {
+    
+    flex: 1;
+
+    min-width: 0;
+    margin: 0 10px 0 0;
+    padding: 2rem;
+    background-color: lightblue;
+}
+
+#portfolio_text {
+    text-align: center;
+}
+
+.portfolio_image {
+    max-width: 300px;
+    height: 400px;
+    margin: 1rem 0;
+    
+}
+
+@media (max-width: 900px) {
+    .nav-container {
+        width: 58px;
+        position: relative;
+    }
+    .nav-item {
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .portfolio_image {
+        max-width: 100%;
+    }
+
+    .full-label {
+        display: none;
+    }
+
+    .content {
+        margin: 0 0 0 2px;
+
+        max-width: 785px;
+        min-width: 150px;
+    }
+    body {
+        padding: .2rem;
+    }
+
+    .nav-container:hover {
+        width: 100px;
+        transition: width 0.3s ease;
+        .full-label {
+            display: inline;
+            transition: display .2s ease;
+        }
+        .short-label {
+            display: none;
+        }
+       
+    }
+
+}
+
+@media (min-width: 900px) {
+    body {
+        padding: .5rem;
+        margin: 1rem 10rem 1rem 10rem;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .short-label {
+        display: none;
+    }
+
+    .content {
+        margin: 0 10px 0 2px;
+        padding: 2rem;
+    }
+    
+    .nav-item {
+        display: block;
+    }
+
+    .nav-item:hover {
+        background-color: lightgray;
+        border: 5px solid lightgray;
+        transition: background-color 0.1s ease, border 0.1s ease;
+    }
+}

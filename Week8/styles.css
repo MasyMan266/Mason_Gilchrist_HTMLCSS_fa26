@@ -5,7 +5,7 @@
 #mainBox {
    border: dashed blue thick;
    width: fit-screenmax;
-   height: fit-screenmax;
+   height: fit-content;
    margin-left: auto;
    margin-right: auto;
    padding: 1px;
