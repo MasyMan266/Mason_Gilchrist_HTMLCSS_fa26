@@ -22,8 +22,14 @@ td {
 }
 
 #calendar {
-    width: 3rem;
-    height: 3rem;
+    width: 6rem;
+    height: 6rem;
     text-align: center;
     border: thin solid black;
+
+}
+
+.spreadsheet-container {
+    overflow-x: auto;
+    scale: 1.25;
 }
