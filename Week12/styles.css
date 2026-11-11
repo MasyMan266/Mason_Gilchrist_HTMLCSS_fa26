@@ -34,9 +34,17 @@ tr:last-child td:first-child {
     border-bottom-left-radius: 15px;
 }
 
+td:nth-child(even) {
+    background-color: lightcoral;
+}
 
+td:nth-child(odd) {
+    background-color: lightgrey;
+}
 
-
+tbody td:first-child {
+    background-color: lightblue;
+}
 
 
 @media (max-width: 600px) {
