@@ -1,5 +1,5 @@
-html table {
-    margin: -40px 0 0 auto;
+table {
+    margin: 0 auto;
     width: 25%;
     max-height: 300px;
     border-collapse: separate;
@@ -9,6 +9,8 @@ html table {
     overflow-y: auto;
     padding: 2.5px;
 }
+
+
 
 tr {
     text-align: center;
@@ -44,6 +46,47 @@ td:nth-child(odd) {
 
 tbody td:first-child {
     background-color: lightblue;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    margin-left: -40px;
+
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    border: solid 1px black;
+    padding: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px gray;
+}
+
+nav ul li a:hover {
+    background-color: lightgrey;
+}
+
+nav ul li a:focus {
+    outline: none;
+    background-color: rgb(66, 66, 66);
 }
 
 
